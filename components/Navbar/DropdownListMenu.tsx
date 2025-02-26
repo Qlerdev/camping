@@ -33,13 +33,13 @@ const DropdownListMenu = () => {
         {/*Log out */}
         <SignedOut>
           <DropdownMenuItem>
-            <SignInButton>
+            <SignInButton mode="modal">
               <button>Login</button>
             </SignInButton>
           </DropdownMenuItem>
 
           <DropdownMenuItem>
-            <SignUpButton>
+            <SignUpButton mode="modal">
               <button>Register</button>
             </SignUpButton>
           </DropdownMenuItem>
@@ -54,7 +54,9 @@ const DropdownListMenu = () => {
             );
           })}
           <DropdownMenuSeparator></DropdownMenuSeparator>
-          <SignOutLink></SignOutLink>
+          <DropdownMenuItem>
+            <SignOutLink></SignOutLink>
+          </DropdownMenuItem>
         </SignedIn>
       </DropdownMenuContent>
     </DropdownMenu>
